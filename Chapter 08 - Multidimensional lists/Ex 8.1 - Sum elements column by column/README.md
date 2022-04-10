@@ -3,7 +3,7 @@
 <img src="https://github.com/allwak/Introduction-to-python-programming-and-data-structures/blob/main/Chapter%2008%20-%20Multidimensional%20lists/Ex%208.1%20-%20Sum%20elements%20column%20by%20column/Task.jpg" /> 
 
 # Solution
-```
+```{python}
 def fill_matrix():
     matrix = []
     for i in range(3):
@@ -22,4 +22,5 @@ def main():
     for i in range(4):
         print("Sum of the elements at column " + str(i) + " is " + str(sumColumn(matrix, i)))
 
-main()```
+main()
+```
