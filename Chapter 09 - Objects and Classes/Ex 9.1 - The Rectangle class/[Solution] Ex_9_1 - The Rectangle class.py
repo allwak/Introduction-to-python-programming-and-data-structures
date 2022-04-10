@@ -1,29 +1,23 @@
-# Sum elements column by column
+# (The Rectangle class) Following the example of the Circle class in Section 9.2, 
+# design a class named Rectangle to represent a rectangle. The class contains:
+# Two data fields named width and height.
+# A constructor that creates a rectangle with the specified width and height. 
+# The default values are 1 and 2 for the width and height, respectively.
 
-# Enter a 3-by-4 matrix row 0: 1.5 2 3 4
-# Enter a 3-by-4 matrix row 1: 5.4 6 7 8
-# Enter a 3-by-4 matrix row 2: 9 10 11 12
-# Sum of the elements at column 0 is 15.9
-# Sum of the elements at column 1 is 18.0
-# Sum of the elements at column 2 is 21.0
-# Sum of the elements at column 3 is 24.0
+# A method named getArea() that returns the area of this rectangle.
+# A method named getPerimeter() that returns the perimeter.
 
-def fill_matrix():
-    matrix = []
-    for i in range(3):
-        row = [float(x) for x in input("Enter a 3-by-4 matrix row " + str(i) + ": ").split()]
-        matrix.append(row) 
-    return matrix
+# Draw the UML diagram for the class, and then implement the class. 
+# Write a test program that creates two Rectangle objects—one with width 4 and height 40 and the other with width 
+# 3.5 and height 35.7. Display the width, height, area, and perimeter of each rectangle in this order.
 
-def sumColumn(matrix, columnIndex):
-    sum = 0
-    for row in matrix:
-        sum += row[columnIndex]
-    return sum
+class Rectangle:
+    def __init__(self, width = 1, height = 2):
+        self.width = width
+        self.height = height
 
-def main():
-    matrix = fill_matrix()
-    for i in range(4):
-        print("Sum of the elements at column " + str(i) + " is " + str(sumColumn(matrix, i)))
+    def getArea(self):
+        return self.width * self.height
 
-main()
+    def getPerimeter(self):
+        return 2 * (self.width + self.height)

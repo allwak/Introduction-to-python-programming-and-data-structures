@@ -1,6 +1,6 @@
 # Exercise 9.1 - The Rectangle class
 
-<img src="https://github.com/allwak/Introduction-to-python-programming-and-data-structures/blob/main/Chapter%2008%20-%20Multidimensional%20lists/Ex%208.1%20-%20Sum%20elements%20column%20by%20column/Task.jpg" /> 
+<img src="https://github.com/allwak/Introduction-to-python-programming-and-data-structures/blob/main/Chapter%2009%20-%20Objects%20and%20Classes/Ex%209.1%20-%20The%20Rectangle%20class/Task.jpg" /> 
 
 # Solution
 ```python
